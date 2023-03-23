@@ -8,19 +8,16 @@ import java.util.List;
 
 import Model.Vivienda;
 
-
-
 public class ControllerVivienda {
-	
+
 	public static List<Vivienda> findAllByIdPais(int idLocalidad) {
 		List<Vivienda> lista = new ArrayList<Vivienda>();
-		
+
 		try {
 			Connection conn = ConnectionManagerV1.getConexion();
 			Statement st = conn.createStatement();
-			ResultSet rs = st.executeQuery("select * from alquileres.vivienda "
-					+ "where idLocalidad = " + idLocalidad);
-			
+			ResultSet rs = st.executeQuery("select * from alquileres.vivienda " + "where idLocalidad = " + idLocalidad);
+
 			while (rs.next()) {
 				Vivienda i = new Vivienda();
 				i.setId(rs.getInt("id"));
@@ -28,12 +25,11 @@ public class ControllerVivienda {
 				i.setIdLocalidad(rs.getInt("idLocalidad"));
 				lista.add(i);
 			}
-			
-		}
-		catch (Exception ex) {
+
+		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		
+
 		return lista;
 	}
 

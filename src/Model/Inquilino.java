@@ -3,7 +3,7 @@ package Model;
 import java.sql.Date;
 
 public class Inquilino {
-	
+
 	private int id;
 	private String dni;
 	private String nombreCompleto;
@@ -11,8 +11,7 @@ public class Inquilino {
 	private java.util.Date fechaFinAlquiler;
 	private Float coutaMensual;
 	private int idVivienda;
-	
-	
+
 	/**
 	 * 
 	 */
@@ -20,7 +19,6 @@ public class Inquilino {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
 
 	/**
 	 * @param id
@@ -43,14 +41,12 @@ public class Inquilino {
 		this.idVivienda = idVivienda;
 	}
 
-
 	/**
 	 * @return the id
 	 */
 	public int getId() {
 		return id;
 	}
-
 
 	/**
 	 * @param id the id to set
@@ -59,14 +55,12 @@ public class Inquilino {
 		this.id = id;
 	}
 
-
 	/**
 	 * @return the dni
 	 */
 	public String getDni() {
 		return dni;
 	}
-
 
 	/**
 	 * @param dni the dni to set
@@ -75,14 +69,12 @@ public class Inquilino {
 		this.dni = dni;
 	}
 
-
 	/**
 	 * @return the nombreCompleto
 	 */
 	public String getNombreCompleto() {
 		return nombreCompleto;
 	}
-
 
 	/**
 	 * @param nombreCompleto the nombreCompleto to set
@@ -91,14 +83,12 @@ public class Inquilino {
 		this.nombreCompleto = nombreCompleto;
 	}
 
-
 	/**
 	 * @return the fechaIncioAlquiler
 	 */
 	public java.util.Date getFechaIncioAlquiler() {
 		return fechaIncioAlquiler;
 	}
-
 
 	/**
 	 * @param fechaIncioAlquiler the fechaIncioAlquiler to set
@@ -107,14 +97,12 @@ public class Inquilino {
 		this.fechaIncioAlquiler = fechaIncioAlquiler;
 	}
 
-
 	/**
 	 * @return the fechaFinAlquiler
 	 */
 	public java.util.Date getFechaFinAlquiler() {
 		return fechaFinAlquiler;
 	}
-
 
 	/**
 	 * @param fechaFinAlquiler the fechaFinAlquiler to set
@@ -123,14 +111,12 @@ public class Inquilino {
 		this.fechaFinAlquiler = fechaFinAlquiler;
 	}
 
-
 	/**
 	 * @return the coutaMensual
 	 */
 	public Float getCoutaMensual() {
 		return coutaMensual;
 	}
-
 
 	/**
 	 * @param coutaMensual the coutaMensual to set
@@ -139,14 +125,12 @@ public class Inquilino {
 		this.coutaMensual = coutaMensual;
 	}
 
-
 	/**
 	 * @return the idVivienda
 	 */
 	public int getIdVivienda() {
 		return idVivienda;
 	}
-
 
 	/**
 	 * @param idVivienda the idVivienda to set
@@ -155,17 +139,11 @@ public class Inquilino {
 		this.idVivienda = idVivienda;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Inquilino [id=" + id + ", dni=" + dni + ", nombreCompleto=" + nombreCompleto + ", fechaIncioAlquiler="
 				+ fechaIncioAlquiler + ", fechaFinAlquiler=" + fechaFinAlquiler + ", coutaMensual=" + coutaMensual
 				+ ", idVivienda=" + idVivienda + "]";
 	}
-	
-	
-	
-	
-	
 
 }
